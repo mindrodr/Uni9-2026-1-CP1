@@ -1,0 +1,122 @@
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: #f8f5f0;
+        color: #333;
+      }
+
+      header {
+        background: #34623f;
+        color: #fff;
+        padding: 20px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      .container {
+        width: min(1100px, 90%);
+        margin: 0 auto;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      .menu {
+        display: flex;
+        gap: 16px;
+      }
+
+      .menu a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .hero {
+        display: grid;
+        gap: 24px;
+        align-items: center;
+        margin: 40px 0;
+      }
+
+      .hero img {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .hero-text {
+        padding: 24px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .hero-text h1 {
+        margin-top: 0;
+        color: #22422d;
+      }
+
+      .hero-text p {
+        margin: 16px 0 0;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      section h2 {
+        margin-bottom: 16px;
+        color: #22422d;
+      }
+
+      .services {
+        display: grid;
+        gap: 20px;
+      }
+
+      .service-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 18px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      }
+
+      .service-card h3 {
+        margin-top: 0;
+        color: #34623f;
+      }
+
+      .service-card p {
+        margin: 10px 0 0;
+      }
+
+      footer {
+        background: #2a5131;
+        color: #f2f2f2;
+        padding: 24px 0;
+      }
+
+      footer p {
+        margin: 6px 0;
+      }
+
+      @media (min-width: 800px) {
+        .hero {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .services {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
